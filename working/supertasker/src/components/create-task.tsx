@@ -1,13 +1,19 @@
 import { useState } from "react"
 
+import { addTask } from "../features/tasks-slice"
+import { useAppDispatch } from "../hooks"
+
 const CreateTask = () => {
   const [newTaskTitle, setnewTaskTitle] = useState("")
+  const dispatch = useAppDispatch()
 
   return (
     <form
       className="create-task"
       onSubmit={e => {
         e.preventDefault()
+        dispatch(addTask({ title: newTaskTitle }))
+        setnewTaskTitle("")
       }}>
       <label htmlFor="new-task-title">
         Title

@@ -55,7 +55,7 @@ export function makeServer({ environment = "development" }) {
     },
 
     routes() {
-      this.timing = 2000
+      this.timing = 20000
       this.namespace = "api"
 
       this.get("columns")
