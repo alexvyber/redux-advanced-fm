@@ -1,7 +1,7 @@
 type Task = {
   id: string
   title: string
-  user?: User[id]
+  user?: User["id"]
   column?: StatusColumn["id"]
 }
 
