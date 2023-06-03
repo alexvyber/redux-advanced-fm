@@ -1,0 +1,3 @@
+[submodule "supertasker"]
+	path = supertasker
+	url = https://github.com/stevekinney/supertasker.git
