@@ -1,9 +1,9 @@
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren } from "react"
 
-type StatusColumnsProps = {};
+type StatusColumnsProps = {}
 
 const StatusColumns = ({ children }: PropsWithChildren<StatusColumnsProps>) => {
-  return <section className="flex gap-4">{children}</section>;
-};
+  return <section className="flex gap-4">{children}</section>
+}
 
-export default StatusColumns;
+export default StatusColumns

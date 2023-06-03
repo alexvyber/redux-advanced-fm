@@ -1,5 +1,5 @@
-import CreateTask from './create-task';
-import TaskList from './task-list';
+import CreateTask from "./create-task"
+import TaskList from "./task-list"
 
 const Application = () => {
   return (
@@ -10,7 +10,7 @@ const Application = () => {
       </div>
       <TaskList />
     </main>
-  );
-};
+  )
+}
 
-export default Application;
+export default Application

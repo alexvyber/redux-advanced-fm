@@ -1,7 +1,7 @@
-import { createContext } from 'react';
+import { createContext } from "react"
 
-import data from './api/data.json';
+import data from "./api/data.json"
 
-const ApplicationContext = createContext(data);
+const ApplicationContext = createContext(data)
 
-export default ApplicationContext;
+export default ApplicationContext

@@ -1,8 +1,8 @@
-import { ComponentPropsWithoutRef, useId } from 'react';
+import { ComponentPropsWithoutRef, useId } from "react"
 
-const UserSelect = (props: ComponentPropsWithoutRef<'select'>) => {
-  const id = useId();
-  const users: User[] = [];
+const UserSelect = (props: ComponentPropsWithoutRef<"select">) => {
+  const id = useId()
+  const users: User[] = []
 
   return (
     <div>
@@ -11,14 +11,14 @@ const UserSelect = (props: ComponentPropsWithoutRef<'select'>) => {
       </label>
       <select id={props.id || id} className="user-select" {...props}>
         <option></option>
-        {users.map((user) => (
+        {users.map(user => (
           <option key={user.id} value={user.id}>
             {user.alterEgo}
           </option>
         ))}
       </select>
     </div>
-  );
-};
+  )
+}
 
-export default UserSelect;
+export default UserSelect

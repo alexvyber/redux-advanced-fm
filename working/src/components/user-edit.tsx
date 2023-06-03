@@ -1,23 +1,23 @@
-import { ChangeEventHandler } from 'react';
+import { ChangeEventHandler } from "react"
 
 type UserEditProps = {
-  user: User;
-};
+  user: User
+}
 
 const UserEdit = ({ user }: UserEditProps) => {
-  const id = (p: keyof User) => `edit-user-${user.id}-${p}`;
+  const id = (p: keyof User) => `edit-user-${user.id}-${p}`
 
-  const handleChange: ChangeEventHandler<HTMLInputElement> = (event) => {
-    const { name, value } = event.target;
-    console.log('Put an action here to create a user. 😝', { name, value });
-  };
+  const handleChange: ChangeEventHandler<HTMLInputElement> = event => {
+    const { name, value } = event.target
+    console.log("Put an action here to create a user. 😝", { name, value })
+  }
 
   return (
     <div className="user-edit">
-      <label htmlFor={id('realName')}>
+      <label htmlFor={id("realName")}>
         Real Name
         <input
-          id={id('realName')}
+          id={id("realName")}
           type="text"
           value={user.realName}
           name="realName"
@@ -25,10 +25,10 @@ const UserEdit = ({ user }: UserEditProps) => {
           onChange={handleChange}
         />
       </label>
-      <label htmlFor={id('alterEgo')}>
+      <label htmlFor={id("alterEgo")}>
         Alter Ego
         <input
-          id={id('alterEgo')}
+          id={id("alterEgo")}
           type="text"
           value={user.alterEgo}
           name="alterEgo"
@@ -37,7 +37,7 @@ const UserEdit = ({ user }: UserEditProps) => {
         />
       </label>
     </div>
-  );
-};
+  )
+}
 
-export default UserEdit;
+export default UserEdit
