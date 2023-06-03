@@ -1,3 +1,9 @@
 [submodule "supertasker"]
 	path = supertasker
 	url = https://github.com/stevekinney/supertasker.git
+[submodule "accident-counter-rtk"]
+	path = accident-counter-rtk
+	url = https://github.com/stevekinney/accident-counter-rtk.git
+[submodule "jetsetter-rtk"]
+	path = jetsetter-rtk
+	url = https://github.com/stevekinney/jetsetter-rtk.git
